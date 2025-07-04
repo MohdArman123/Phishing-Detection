@@ -1,0 +1,136 @@
+# Python-specific
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables
+.env
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database
+*.db
+*.sqlite3
+phishing_detection.db
+
+# Machine Learning
+*.pkl
+*.h5
+*.pt
+*.pth
+model_weights/
+models/
+*.ckpt
+*.bin
+
+# Logs
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+dist/
+build/
+.pytest_cache/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# IDE and editor files
+.idea/
+*.iml
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Testing
+*.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Streamlit
+.streamlit/
+streamlit_app_data/
+*.streamlit
+
+# FastAPI
+uvicorn.log
+fastapi.log
+
+# Documentation
+docs/_build/
+docs/build/
+docs/source/_build/
+
+# Miscellaneous
+*.bak
+*.swp
+*~
+*.tmp
+temp/
+tmp/
+
+# Sensitive data
+secrets/
+credentials.json
+*.key
+*.pem
+*.crt
+*.csr
+*.srl
+
+# Output files
+*.csv
+*.jsonl
+*.out
+*.err
+*.bak
+
+# Jupyter notebooks
+*.ipynb_checkpoints/
+
+# Docker
+Dockerfile
+docker-compose.yml
+*.dockerignore
+
+# Packaging
+*.tar.gz
+*.zip
+*.whl
+*.egg
+dist/
+build/
+*.egg-info/
