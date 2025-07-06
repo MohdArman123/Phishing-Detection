@@ -33,7 +33,7 @@ phishing_detection.db
 *.pt
 *.pth
 model_weights/
-models/
+# models/
 *.ckpt
 *.bin
 
