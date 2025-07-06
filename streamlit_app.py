@@ -68,7 +68,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Configuration
-API_BASE_URL = "http://localhost:8000"
+import os
+API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")
+# API_BASE_URL = "http://localhost:8000"
 
 # Initialize session state
 if 'detection_history' not in st.session_state:

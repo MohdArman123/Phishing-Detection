@@ -44,7 +44,7 @@ app = FastAPI(
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://*.streamlit.app", "http://localhost:8501"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -96,8 +96,8 @@ class PhishingDetector:
             
             # Load BERT model for content analysis
             logger.info("Loading BERT model...")
-            bert_tokenizer = AutoTokenizer.from_pretrained('roberta-base')
-            bert_model = AutoModelForSequenceClassification.from_pretrained('roberta-base')
+            bert_tokenizer = AutoTokenizer.from_pretrained('roberta-base', cache_dir='./models')
+            bert_model = AutoModelForSequenceClassification.from_pretrained('roberta-base', cache_dir='./models')
             
             # Initialize URL feature model (will be trained with sample data)
             logger.info("Initializing URL feature model...")
